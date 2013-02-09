@@ -13,3 +13,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+.DS_Store
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+bundler_stubs/
