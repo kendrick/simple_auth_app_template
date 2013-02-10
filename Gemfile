@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'bootstrap-sass'
+gem 'jquery-rails'
 gem 'bcrypt-ruby'
 
 # Bundle edge Rails instead:
@@ -25,6 +26,10 @@ group :test do
   gem 'growl'
 end
 
+group :production do
+  gem 'pg'
+end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -32,8 +37,6 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
