@@ -54,6 +54,16 @@ describe User do
     end
   end
 
+  describe "when email format is invalid" do
+    it "should be invalid" do
+      addrs = %w[email user@ user_at_something.com user@some+where.com email@com. @ --------- 2asdf]
+      addrs.each do |invalid_addr|
+        @user.email = invalid_addr
+        @user.should_not be_valid
+      end
+    end
+  end
+
   describe "when email address is already taken" do
     before do
       user_with_same_email = @user.dup

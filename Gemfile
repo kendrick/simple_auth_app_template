@@ -10,8 +10,16 @@ gem 'bcrypt-ruby'
 
 gem 'sqlite3'
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rails_best_practices'
+  gem 'brakeman'
+end
+
 group :development, :test do
-  gem 'rspec-rails', '2.10.0'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem 'annotate'
   gem 'guard-rspec'
 end
@@ -33,9 +41,12 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  #gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails'
+  #gem 'coffee-rails', '~> 3.2.1'
+  gem 'coffee-rails'
+  #gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 end
 
 # To use ActiveModel has_secure_password
