@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Commonblock::Application.config.secret_token = '2e4db3e705c47a3650a7d7a24136c889cf3c58e5bf3d799b39f481332a5ea03ec9abc233f865587c1541b5db1b46f1e79bb42ad8803c4c6a1b47f4286030c167'
+SimpleAuthAppTemplate::Application.config.secret_token = '44fbff69950af86b0d4b41c3704c3f754527524339efd421d51af2d70cc56e952247a667938a99e39a89e3eb0941e7b6c8328efd768daa6bdc17048f887e5593'

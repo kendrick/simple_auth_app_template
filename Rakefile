@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Commonblock::Application.load_tasks
+SimpleAuthAppTemplate::Application.load_tasks
